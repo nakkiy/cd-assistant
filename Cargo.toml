@@ -1,0 +1,21 @@
+[package]
+name = "cd-assistant"
+version = "0.1.0"
+edition = "2024"
+description = "A lightweight TUI navigator for generating cd commands quickly."
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/nakkiy/cd-assistant"
+homepage = "https://github.com/nakkiy/cd-assistant"
+documentation = "https://github.com/nakkiy/cd-assistant#readme"
+readme = "README.md"
+keywords = ["cd", "terminal", "tui", "navigator", "cli"]
+categories = ["command-line-utilities"]
+
+[[bin]]
+name = "cda"
+path = "src/main.rs"
+
+[dependencies]
+ratatui = "0.28"
+crossterm = "0.28"
+chrono = "0.4"
